@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "lib": ["ESNext"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "src/",
+    "outDir": "build",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules", "build"]
+}
