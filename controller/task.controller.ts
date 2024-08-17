@@ -8,7 +8,9 @@ export const getAllTask = asyncHandler(
     const task = await Task.find();
 
     if (task.length === 0) {
-      return next(new AppError("No task found", 404));
+      return res.status(404).json({
+        message: "No task found!",
+      });
     }
 
     res.status(200).json({
