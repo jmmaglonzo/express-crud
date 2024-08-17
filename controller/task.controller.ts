@@ -14,9 +14,7 @@ export const getAllTask = asyncHandler(
     res.status(200).json({
       status: "success",
       results: task.length,
-      data: {
-        task,
-      },
+      task,
     });
   }
 );
@@ -33,9 +31,7 @@ export const getTask = asyncHandler(
 
     res.status(200).json({
       status: "success",
-      data: {
-        getTask,
-      },
+      getTask,
     });
   }
 );
@@ -45,7 +41,7 @@ export const createTask = asyncHandler(
     const createTask = await Task.create(req.body);
     res.status(200).json({
       status: "success",
-      data: { createTask },
+      createTask,
     });
   }
 );
@@ -65,7 +61,7 @@ export const updateTask = asyncHandler(
 
     res.status(200).json({
       status: "success",
-      data: { update },
+      update,
     });
   }
 );
