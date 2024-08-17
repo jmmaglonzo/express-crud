@@ -5,7 +5,7 @@
     "lib": ["ESNext"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "rootDir": "src/",
+    "rootDir": ".",
     "outDir": "build",
     "moduleResolution": "node",
     "experimentalDecorators": true,
